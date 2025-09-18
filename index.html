@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Dynamic Web Fundamentals – Clinton Selekeowei</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals – Clinton Selekeowei. Personal webpage including about me, resources, and project links.">
+  <meta name="author" content="Clinton Selekeowei">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD131 | Clinton Selekeowei</h1>
+  <header>
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <nav>
+      <a href="https://www.linkedin.com/in/ismeclint/" target="_blank">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/54?lang=eng" target="_blank">Scripture</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Clinton Selekeowei</h1>
+
+    <section class="card">
+      <h2>About Me</h2>
+<div class="about-columns">
+    <div class="about-text">
+      <p>
+        My name is Clinton. I am from Nigeria and passionate about design and development. 
+        I enjoy solving problems, learning new skills, and building useful products.
+      </p>
+    </div>
+
+    <div class="profile-wrap">
+      <img src="images/profile.jpg" alt="Photo of Clinton Selekeowei" class="profile-img">
+    </div>
+  </div>
+
+  <div class="delta">
+    <img src="images/nigeria_flag.png" alt="Flag of Nigeria" class="delta-flag">
+    <div class="delta-desc">
+      <h3>Delta, Nigeria</h3>
+      <p>
+        Delta State is located in the southern region of Nigeria, known for its diverse
+        ethnic groups, rich culture, and natural resources. It is home to the Niger Delta,
+        famous for its oil production and unique landscape of rivers and creeks.
+      </p>
+    </div>
+  </div>
+    </section>
+
+    <section class="card">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+        <li><a href="https://www.smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
+        <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+        <li><a href="https://www.w3schools.com" target="_blank">W3 Schools</a></li>
+        <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+        <li><a href="https://placeholder.com/" target="_blank">Image Placeholder</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy;<span id="year"></span> 🌸 Clinton Selekeowei 🌸 Nigeria
+    </p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>

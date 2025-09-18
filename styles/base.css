@@ -1,0 +1,187 @@
+:root {
+  --primary-blue: #003366;
+  --accent-yellow: #ffcc00;
+  --card-border: #ccc;
+  --text-dark: #222;
+  --text-light: #fff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #fdfdfd;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* HEADER Section */
+header {
+  background-color: var(--primary-blue);
+  color: var(--text-light);
+  padding: 1rem;
+  text-align: center;
+}
+
+#course-title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: #333;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent-yellow);
+  border-bottom: 1px solid var(--accent-yellow);
+}
+
+/* MAIN Section */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+main h1 {
+  grid-column: span 2;
+  text-align: center;
+  color: var(--primary-blue);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+
+.about-columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.about-text {
+  line-height: 1.6;
+}
+
+.profile-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.delta {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.delta-flag {
+  width: 90px;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.delta-desc h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+  color: var(--primary-blue);
+}
+
+.delta-desc p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* CARDS Section */
+.card {
+  background: white;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  background: var(--primary-blue);
+  color: var(--text-light);
+  margin: -1rem -1rem 1rem -1rem;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.profile-img {
+  max-width: 150px;
+  border-radius: 6px;
+  display: block;
+  margin: 1rem auto;
+}
+
+/* LINKS LIST Section */
+.card ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.card ul li {
+  margin: 0.5rem 0;
+}
+
+.card ul li a {
+  color: #0000ee;
+  text-decoration: underline;
+}
+
+.card ul li a:hover {
+  color: var(--primary-blue);
+}
+
+/* FOOTER Section */
+footer {
+  background-color: var(--primary-blue);
+  color: var(--text-light);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
+
+#lastModified {
+  color: var(--accent-yellow);
+  font-weight: 500;
+}

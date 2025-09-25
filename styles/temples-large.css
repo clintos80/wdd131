@@ -1,0 +1,16 @@
+@media (min-width: 768px) {
+  #menu-toggle {
+    display: none;
+  }
+
+  nav {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

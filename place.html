@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nigeria</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals – Clinton Selekeowei. A country page of Nigeria showing its information and weather report.">
+  <meta name="author" content="Clinton Selekeowei">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="stylesheet" href="styles/place-large.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Nigeria</h1>
+  </header>
+
+  <section class="hero">
+    <picture>
+      <source srcset="images/nigeria-large.webp" media="(min-width: 768px)">
+      <img src="images/nigeria-small.webp" alt="Nigeria landscape and culture">
+    </picture>
+  </section>
+
+  <section class="data">
+    <h2>Data</h2>
+    <ul>
+      <li><strong>Area:</strong> 923,769 sq km</li>
+      <li><strong>Population:</strong> 223,804,632</li>
+      <li><strong>Capital:</strong> Abuja</li>
+      <li><strong>Languages:</strong> English (official), Hausa, Yoruba, Igbo</li>
+      <li><strong>Currency:</strong> Nigerian Naira (₦)</li>
+      <li><strong>Time Zone:</strong> UTC+1</li>
+      <li><strong>Calling Code:</strong> +234</li>
+      <li><strong>Internet TLD:</strong> .ng</li>
+    </ul>
+  </section>
+
+  <section class="weather">
+    <h2>Weather</h2>
+    <img class="weather-icon" src="images/weather.svg" alt="Weather Icon">
+    <ul>
+      <li><strong>Temperature:</strong> <span id="temp">28</span> °C</li>
+      <li><strong>Conditions:</strong> Partly Cloudy</li>
+      <li><strong>Wind:</strong> <span id="wind">10</span> km/h</li>
+      <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>
+      &copy;<span id="year"></span> 🌸 Clinton Selekeowei 🌸 Nigeria<br>
+      Last Modification: <span id="lastModified"></span>
+    </p>
+  </footer>
+</body>
+</html>

@@ -97,34 +97,6 @@ main{
   display: block;
 }
 
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
-}
-
-.hero-text h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero-text p {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-}
-
-.hero-text .btn {
-  background: var(--accent);
-  color: #fff;
-  padding: 0.6rem 1rem;
-  border-radius: 8px;
-  text-decoration: none;
-}
-
 html, body {
   overflow-x: hidden;
 }
@@ -157,13 +129,11 @@ html, body {
   justify-content: center;           
   align-items: center;                
   text-align: center;
-  padding: 1.25rem;
-  pointer-events: none;                
+  padding: 1.25rem;               
 }
 
 
 .hero-overlay .btn {
-  pointer-events: auto;
   margin-top: 1rem;
   display: inline-block;
   text-decoration: none;

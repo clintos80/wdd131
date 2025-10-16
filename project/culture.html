@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Discover Delta State — Culture & Attractions</title>
+  <meta name="description" content="Culture and attractions of Delta State, Nigeria — Discover Delta State project.">
+   <meta name="author" content="Clinton Selekeowei">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css">
+  <link rel="stylesheet" href="styles/site-large.css" media="screen and (min-width: 768px)">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+    <a href="index.html">
+    <img src="images/delta-logo.jpeg" alt="Discover Delta State Logo" class="logo">
+    </a>
+    </div>
+
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+
+    <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="culture.html">Culture &amp; Attractions</a>
+      <a href="food.html">Food &amp; Festivals</a>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+    <section class="section card intro">
+      <h1>Culture &amp; Attractions</h1>
+      <p>Delta State’s cultural heritage is expressed through festivals, dances, crafts, and historical sites. Explore the places below.</p>
+    </section>
+
+    <section class="section">
+      <h2>Attractions</h2>
+      <div id="attractionList" class="list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>©<span id="year"></span> 🌸 Clinton Selekeowei 🌸 Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

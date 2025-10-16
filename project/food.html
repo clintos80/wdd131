@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Discover Delta State — Food & Festivals</title>
+  <meta name="description" content="Food and festivals of Delta State, Nigeria.">
+   <meta name="author" content="Clinton Selekeowei">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css">
+  <link rel="stylesheet" href="styles/site-large.css" media="screen and (min-width: 768px)">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+    <a href="index.html">
+    <img src="images/delta-logo.jpeg" alt="Discover Delta State Logo" class="logo">
+    </a>
+    </div>
+
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+
+    <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="culture.html">Culture &amp; Attractions</a>
+      <a href="food.html">Food &amp; Festivals</a>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+    <section class="section card intro">
+      <h1>Food &amp; Festivals</h1>
+      <p>Delta State is known for rich soups, seafood dishes, and lively festivals. Below are some highlights.</p>
+    </section>
+
+    <section class="section">
+      <h2>Signature Dishes</h2>
+      <div id="foodGrid" class="grid"></div>
+    </section>
+
+    <section class="section">
+      <h2>Festivals & Events</h2>
+      <ul id="festivalList" class="list"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>©<span id="year"></span> 🌸 Clinton Selekeowei 🌸 Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

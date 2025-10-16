@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Discover Delta State, Nigeria — Home</title>
+  <meta name="description" content="Discover Delta State — overview, attractions, culture and food. A responsive project by Clinton Selekeowei for WDD131.">
+  <meta name="author" content="Clinton Selekeowei">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css">
+  <link rel="stylesheet" href="styles/site-large.css" media="screen and (min-width: 768px)">
+  <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">
+    <a href="index.html">
+    <img src="images/delta-logo.jpeg" alt="Discover Delta State Logo" class="logo">
+    </a>
+    </div>
+
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+
+    <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="culture.html">Culture &amp; Attractions</a>
+      <a href="food.html">Food &amp; Festivals</a>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+   
+    <section class="hero">
+      <picture>
+        <source srcset="images/delta-hero-large.webp" media="(min-width:768px)">
+        <img src="images/delta-hero-small.webp" alt="River and mangroves in Delta State" loading="lazy">
+      </picture>
+      <div class="hero-overlay">
+        <h1>Discover Delta State</h1>
+        <p>Experience the culture, food, and natural beauty of Nigeria’s Niger Delta.</p>
+        <a class="btn" href="#overview">Explore Now</a>
+      </div>
+    </section>
+
+
+    <section id="overview" class="section card">
+      <h2>Overview</h2>
+      <div class="overview-grid">
+        <div>
+          <p>Delta State, located in southern Nigeria, is a mosaic of cultures and landscapes — from riverine creeks to vibrant urban centres such as Asaba and Warri. The state is home to diverse ethnic groups including Urhobo, Itsekiri, Ijaw, Isoko and Anioma communities.</p>
+          <ul class="quick-facts">
+            <li><strong>Capital:</strong> Asaba</li>
+            <li><strong>Region:</strong> South-South (Niger Delta)</li>
+            <li><strong>Language:</strong> English &amp; regional languages</li>
+            <li><strong>Highlights:</strong> Festivals, waterways, seafood cuisine</li>
+          </ul>
+        </div>
+        <div>
+          <img src="images/asaba-small.webp" alt="City view of Asaba" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+ 
+    <section id="featured" class="section">
+      <h2>Featured Attractions</h2>
+      <div id="attractionGrid" class="grid"></div>
+    </section>
+
+  
+    <section id="contact" class="section card">
+      <h2>Contact / Plan a Visit</h2>
+      <form id="contactForm" method="get" action="mailto:you@example.com">
+        <label for="visitorName">Name</label>
+        <input id="visitorName" name="visitorName" type="text" placeholder="Your name">
+
+        <label for="visitorEmail">Email</label>
+        <input id="visitorEmail" name="visitorEmail" type="email" placeholder="you@example.com" required>
+
+        <label for="visitReason">Reason for Visit</label>
+        <select id="visitReason" name="visitReason" required>
+          <option value="" disabled selected>Select reason...</option>
+          <option value="tourism">Tourism</option>
+          <option value="research">Research</option>
+          <option value="heritage">Heritage / Family</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us what you'd like to see..."></textarea>
+
+        <input type="submit" value="Send Inquiry">
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>©<span id="year"></span> 🌸 Clinton Selekeowei 🌸 Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

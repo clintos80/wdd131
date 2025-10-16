@@ -1,0 +1,28 @@
+@media (min-width:768px){
+  .nav-toggle{display:none}
+  .main-nav{display:flex; gap:1rem; margin-left:auto}
+  .main-nav a{display:inline-block; padding:0.5rem 0.85rem}
+  main{padding:5.5rem 1.5rem 3rem}
+
+  /* multi-column hero layout could be same; keep hero image larger */
+  .overview-grid{grid-template-columns:1fr 420px; align-items:center}
+
+  /* attraction cards 3-per-row */
+  .grid{grid-template-columns:repeat(3, 1fr); gap:1.25rem}
+
+  /* food grid */
+  #foodGrid.grid{grid-template-columns:repeat(3,1fr)}
+
+  /* list layout */
+  .list{display:block}
+
+  /* pseudo-element weather icon example in large view for the project spec:
+     show weather icon after heading via ::after */
+  .hero-text h1::after{
+    content: " ⛅";
+    margin-left:0.5rem;
+  }
+
+  .hero-media { height: 75vh; min-height: 420px; }
+}
+

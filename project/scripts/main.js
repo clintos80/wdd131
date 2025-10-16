@@ -1,10 +1,3 @@
-/* main.js - used across pages
-   features:
-   - render attractions & food via arrays (template literals)
-   - toggle mobile nav
-   - favorites stored in localStorage
-   - populate footer year/lastModified
-*/
 
 document.addEventListener("DOMContentLoaded", init);
 
@@ -15,7 +8,7 @@ function init() {
   restoreFavoritesUI();
 }
 
-/* ---------------- NAV ---------------- */
+
 function setupNavToggle() {
   const btn = document.getElementById("navToggle");
   const nav = document.getElementById("mainNav");
@@ -27,7 +20,7 @@ function setupNavToggle() {
     nav.classList.toggle("show");
   });
 
-  // close nav on link click (mobile)
+
   nav.querySelectorAll("a").forEach(a => {
     a.addEventListener("click", () => {
       nav.classList.remove("show");
@@ -36,7 +29,7 @@ function setupNavToggle() {
   });
 }
 
-/* ---------------- Footer ---------------- */
+
 function populateFooter() {
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
@@ -45,10 +38,7 @@ function populateFooter() {
   if (lmEl) lmEl.textContent = `Last Modification: ${document.lastModified}`;
 }
 
-/* ---------------- Data arrays ----------------
-   These arrays are objects used to render content on pages.
-   You may replace image URLs with your optimized images.
-*/
+
 const attractions = [
   {
     id: "lander-anchorage",
@@ -113,18 +103,16 @@ const festivals = [
   "River Blessing Ceremonies"
 ];
 
-/* ---------------- Rendering functions ---------------- */
 
-/* Renders attractions into #attractionGrid (home) or #attractionList (culture page) */
 function renderPageContent() {
-  // Home: attractionGrid
+
   const grid = document.getElementById("attractionGrid");
   if (grid) {
     grid.innerHTML = attractions.map(a => attractionCardHTML(a)).join("");
     attachFavoriteHandlers(grid);
   }
 
-  // Culture page: render as list with more detail
+
   const list = document.getElementById("attractionList");
   if (list) {
     list.innerHTML = attractions.map(a => {
@@ -141,7 +129,7 @@ function renderPageContent() {
     }).join("");
   }
 
-  // Food page: grid of foods
+
   const foodGrid = document.getElementById("foodGrid");
   if (foodGrid) {
     foodGrid.innerHTML = foods.map(f => {
@@ -159,7 +147,7 @@ function renderPageContent() {
   }
 }
 
-/* Template for attraction card (uses template literals) */
+
 function attractionCardHTML(a) {
   return `
     <article class="card">
@@ -177,7 +165,7 @@ function attractionCardHTML(a) {
   `;
 }
 
-/* ---------------- Favorites (localStorage) ---------------- */
+
 function getFavorites() {
   try {
     const raw = localStorage.getItem("deltaFavorites");
@@ -204,11 +192,11 @@ function toggleFavorite(id, btn) {
   saveFavorites(favs);
 }
 
-/* Attach event listeners for favorite buttons inside a container */
+
 function attachFavoriteHandlers(container) {
   container.querySelectorAll(".favorite-btn").forEach(btn => {
     const id = btn.getAttribute("data-id");
-    // set initial state
+ 
     if (getFavorites().includes(id)) {
       btn.textContent = "♥ Favorited";
     } else {
@@ -221,7 +209,7 @@ function attachFavoriteHandlers(container) {
   });
 }
 
-/* After rendering, update any displayed favorites UI */
+
 function restoreFavoritesUI() {
   const favs = getFavorites();
   document.querySelectorAll(".favorite-btn").forEach(btn => {
